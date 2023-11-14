@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dice Game</title>
+</head>
+<body>
+
+    <!-- Dice image container for both players -->
+    <div class="diceImages">
+        <!-- Dice image for Player 1, initially hidden -->
+        <img src="images/dice-1.png" id="diceImageP1" alt="Dice for Player 1" style="display: none;">
+        <!-- Dice image for Player 2, also initially hidden -->
+        <img src="images/dice-1.png" id="diceImageP2" alt="Dice for Player 2" style="display: none;">
+    </div>
+
+    <!-- Game control area -->
+    <div id="game">
+        <!-- Roll button for dice rolling -->
+        <button id="rollButton">Roll Dice</button>
+        <!-- Placeholder div, can be used to display game-related messages or results -->
+        <div id="result"></div>
+    </div>
+    <br><br>
+
+    <!-- Container for player sections -->
+    <div id="players">
+        <!-- Section for Player 1 -->
+        <div class="player">
+            <!-- Display area for Player 1's current roll -->
+            <div id="currentRollP1">Player 1 Current Roll: 0</div>
+            <!-- Display area for Player 1's total score -->
+            <div id="totalP1">Player 1 Total: 0</div>
+        </div>
+        <!-- Section for Player 2 -->
+        <div class="player">
+            <!-- Display area for Player 2's current roll -->
+            <div id="currentRollP2">Player 2 Current Roll: 0</div>
+            <!-- Display area for Player 2's total score -->
+            <div id="totalP2">Player 2 Total: 0</div>
+        </div>
+    </div>
+
+    <!-- Container for the reset button -->
+    <div class="centered">
+        <!-- Reset button for restarting the game, hidden initially -->
+        <button id="reset" style="display:none;">Reset Game</button>
+    </div>
+
+    <!-- Link to the JavaScript file that contains game logic -->
+    <script src="script.js"></script>
+</body>
+</html>

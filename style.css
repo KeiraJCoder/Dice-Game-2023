@@ -1,0 +1,42 @@
+/* Styles for the game container */
+#game {
+    text-align: center; /* Centers the text (and inline elements) horizontally within the #game div */
+    margin-top: 30px; /* Adds space above the #game div, separating it from elements above */
+}
+
+/* Styles for the dice image container */
+.diceImages {
+    display: flex; /* Applies Flexbox layout, enabling flexible and responsive design */
+    justify-content: center; /* Horizontally centers the content (the dice image) within the .diceImages div */
+    margin-top: 30px; /* Adds space above the .diceImages div, separating it from the #game div */
+}
+
+img {
+    width:20%;
+}
+
+/* Styles for the dice image itself */
+#diceImage {
+    width: 50%; /* Sets the width of the dice image. Its height will scale proportionally */
+    /* 'Adjust size as needed' is a note indicating you can change this value based on your requirements */
+}
+
+/* Styles for the players container */
+#players {
+    display: flex; /* Applies Flexbox layout to arrange child elements (players) in a row */
+    justify-content: space-between; /* Spaces out the child elements evenly, adding space between them */
+    margin: 20px; /* Adds margin around the #players container */
+}
+
+/* Styles for individual player sections */
+.player {
+    flex: 1; /* Assigns a flex-grow value of 1, allowing each player section to take up equal space */
+    text-align: center; /* Centers the text (and inline elements) within each player section */
+}
+
+/* Styles for the centered elements (like the reset button) */
+.centered {
+    text-align: center; /* Centers the text (and inline elements) horizontally within the .centered div */
+    margin-top: 20px; /* Adds space above the .centered div, separating it from elements above */
+    /* 'Adjust as needed' is a note indicating you can change this value based on your requirements */
+}
